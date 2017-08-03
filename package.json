@@ -1,0 +1,19 @@
+{
+  "name": "tv-torrents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eztv": "0.0.10",
+    "eztv-api-pt": "^1.0.12",
+    "ramda": "^0.24.1"
+  },
+  "devDependencies": {}
+}
