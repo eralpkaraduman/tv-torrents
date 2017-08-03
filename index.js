@@ -51,7 +51,7 @@ function pbcopy(data) {
   })
 };
 
-getMagnets('Adventure Time', 9)
+getMagnets('Adventure Time', 7)
 .then(magnets => magnets.reduce((text, magnet) => text += magnet + '\n\n', ''))
 .then(text => pbcopy(text))
 .then(() => console.log('Copied magnet links to clipboard!'))
