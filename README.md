@@ -1,16 +1,7 @@
 #### Fetches tv torrent magnet links and puts them to your clipboard so you can paste to your favorite bittorrent client.
 
-`$ npm install`
-
-modify following lines
-```js
-getMagnets(
-  'Adventure Time', // show name
-  7 // episode number
-)
-```
-
-`$ npm start`
+`$ npm install`  
+`$ ./bin/tv-torrents "Adventure Time" --season 7`
 
 possible successful output
 ```sh
