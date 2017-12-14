@@ -14,6 +14,7 @@
     "commander": "^2.12.2",
     "eztv": "0.0.10",
     "eztv-api-pt": "^1.0.12",
+    "inquirer": "^4.0.1",
     "ramda": "^0.24.1"
   },
   "devDependencies": {}
