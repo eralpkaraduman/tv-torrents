@@ -3,6 +3,8 @@
 `$ npm install`  
 `$ ./bin/tv-torrents "Adventure Time" --season 7`
 
+[![asciicast](https://asciinema.org/a/152820.png)](https://asciinema.org/a/152820)
+
 possible successful output
 ```sh
 Making request to: 'showlist/'
