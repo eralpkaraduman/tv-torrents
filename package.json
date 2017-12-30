@@ -4,7 +4,8 @@
   "description": "",
   "main": "index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +14,12 @@
     "colors": "^1.1.2",
     "commander": "^2.12.2",
     "eztv": "0.0.10",
-    "eztv-api-pt": "^1.0.12",
     "inquirer": "^4.0.1",
-    "ramda": "^0.24.1"
+    "install": "^0.10.2",
+    "npm": "^5.6.0",
+    "ramda": "^0.24.1",
+    "rarbg": "^1.1.0",
+    "rarbgto-api": "^4.0.0"
   },
   "devDependencies": {}
 }
