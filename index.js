@@ -7,7 +7,7 @@ const rarbg = require('./rarbg');
 program
 	.version('1.0.0')
 	.usage('[options] <Series Name>')
-	.option('-s, --season [number]', 'Season Number', 1)
+	.option('-s, --season [number]', 'Season Number')
 	.parse(process.argv);
 
 const [name] = program.args;
@@ -19,9 +19,14 @@ if (!name) {
 	process.exit(1);
 }
 
-const seasonString = parseInt(season).toLocaleString(undefined, {minimumIntegerDigits: 2});
-const searchTerm = `${name}.s${seasonString}`;
-console.log(searchTerm);
+let searchTerm = name;
+
+if (season) {
+	const seasonString = parseInt(season).toLocaleString(undefined, {minimumIntegerDigits: 2});
+	searchTerm = `${name}.s${seasonString}`;
+}
+
+console.log(`searching: ${searchTerm}`);
 
 rarbg(searchTerm)
 .catch(e => { process.exit(1); console.log(e) })

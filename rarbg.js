@@ -20,7 +20,8 @@ module.exports = search_string => rarbg.search({
 })
 .catch(err => console.error(err))
 .then(response => Promise.resolve(
-    response.filter(item => item.filename.includes('1080p'))
+    response
+    .filter(item => item.filename.includes('1080p'))
     .map(item => ({ ...item, parsedName: parseTorrentName(item.filename) }))
     .sort((a, b) => a.parsedName.episode - b.parsedName.episode)
   )
